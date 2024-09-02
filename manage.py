@@ -23,7 +23,7 @@ if __name__ == '__main__':
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "django_work.settings")  # Adjust 'myproject' as needed
 
     # Get the port from the environment variable or default to 8000
-    port = os.environ.get("PORT", "8000")
+    port = os.environ.get("PORT", "10000")
 
     from django.core.management import execute_from_command_line
 
