@@ -19,4 +19,13 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    #main()
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "django_work.settings")  # Adjust 'myproject' as needed
+
+    # Get the port from the environment variable or default to 8000
+    port = os.environ.get("PORT", "8000")
+
+    from django.core.management import execute_from_command_line
+
+    # Add a default argument for the runserver command
+    execute_from_command_line([sys.argv[0], "runserver", "0.0.0.0:" + port])
