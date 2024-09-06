@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-%6z!3q#na94tbi4l-r_pv%_6l-_7q)0(w2wt%&4*(+1p22$2!_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG', 'True')=="True"
 
-ALLOWED_HOSTS = ['https://django-teams.onrender.com']
+ALLOWED_HOSTS = ['django-teams.onrender.com']
 
 
 # Application definition
